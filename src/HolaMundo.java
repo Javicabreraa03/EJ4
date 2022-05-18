@@ -4,6 +4,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
 
 public class HolaMundo extends JFrame {
 
@@ -35,6 +36,12 @@ public class HolaMundo extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		contentPane.add(lblNewLabel, BorderLayout.NORTH);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		contentPane.add(lblNewLabel_1, BorderLayout.CENTER);
 	}
 
 }
